@@ -17,12 +17,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.1 - Data", "5.1 - Data", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.2 - CrossCutting", "5.2 - CrossCutting", "{1E0A1B68-131B-47B0-8D92-7B8A5902DCEA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllScene.Domain", "src\AllScene.Domain\AllScene.Domain.csproj", "{50546947-AB9A-407B-969E-9E796D72D561}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50546947-AB9A-407B-969E-9E796D72D561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50546947-AB9A-407B-969E-9E796D72D561}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50546947-AB9A-407B-969E-9E796D72D561}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50546947-AB9A-407B-969E-9E796D72D561}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{8FEFEED9-30C5-4399-BDDF-E050C7456746} = {3951DEE0-4055-4874-9D5E-864BB9272887}
 		{1E0A1B68-131B-47B0-8D92-7B8A5902DCEA} = {3951DEE0-4055-4874-9D5E-864BB9272887}
+		{50546947-AB9A-407B-969E-9E796D72D561} = {3AC529DE-C564-4BBA-85EE-64CC5BD116FE}
 	EndGlobalSection
 EndGlobal
