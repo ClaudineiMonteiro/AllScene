@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllScene.Domain.Tests", "te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllScene.Infra.Data", "src\AllScene.Infra.Data\AllScene.Infra.Data.csproj", "{16DECCA2-9D59-4E9D-BC1F-D87678808916}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllScene.Services.REST.ClienteAPI", "src\AllScene.Services.REST.ClienteAPI\AllScene.Services.REST.ClienteAPI.csproj", "{25C897B2-A649-4058-B793-5E73544CCB7C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,10 @@ Global
 		{16DECCA2-9D59-4E9D-BC1F-D87678808916}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16DECCA2-9D59-4E9D-BC1F-D87678808916}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16DECCA2-9D59-4E9D-BC1F-D87678808916}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25C897B2-A649-4058-B793-5E73544CCB7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25C897B2-A649-4058-B793-5E73544CCB7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25C897B2-A649-4058-B793-5E73544CCB7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25C897B2-A649-4058-B793-5E73544CCB7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,5 +57,6 @@ Global
 		{50546947-AB9A-407B-969E-9E796D72D561} = {3AC529DE-C564-4BBA-85EE-64CC5BD116FE}
 		{D74DB277-4B89-426D-8BFC-A997571CF126} = {3AC529DE-C564-4BBA-85EE-64CC5BD116FE}
 		{16DECCA2-9D59-4E9D-BC1F-D87678808916} = {8FEFEED9-30C5-4399-BDDF-E050C7456746}
+		{25C897B2-A649-4058-B793-5E73544CCB7C} = {9730E29F-B392-46D0-BAEE-C82DE3146643}
 	EndGlobalSection
 EndGlobal
