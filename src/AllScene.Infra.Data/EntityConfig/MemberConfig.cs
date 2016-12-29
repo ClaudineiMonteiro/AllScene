@@ -26,6 +26,10 @@ namespace AllScene.Infra.Data.EntityConfig
 			Property(c => c.Active)
 				.IsRequired();
 
+			HasRequired(e => e.Artist)
+				.WithMany(c => c.Members)
+				.HasForeignKey(e => e.ArtistId);
+
 			Ignore(c => c.ValidationResult);
 		}
 		#endregion

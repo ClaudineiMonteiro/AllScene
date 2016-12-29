@@ -20,6 +20,7 @@ namespace AllScene.Domain.Entities
 		public Guid ArtistId { get; set; }
 		public string Description { get; set; }
 		public virtual Seguiment Seguiment { get; set; }
+		public Guid GenreId { get; set; }
 		public virtual Genre Genre { get; set; }
 		public virtual ICollection<Member> Members { get; set; }
 		public bool Active { get; set; }
