@@ -22,6 +22,7 @@ namespace AllScene.Domain.Entities
 		public string Gender { get; set; }
 		public Guid ArtistId { get; set; }
 		public virtual Artist Artist { get; set; }
+		public bool Ativo { get; set; }
 		public ValidationResult ValidationResult { get; set; }
 		#endregion
 
