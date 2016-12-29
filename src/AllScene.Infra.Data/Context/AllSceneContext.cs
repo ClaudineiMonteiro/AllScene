@@ -38,6 +38,10 @@ namespace AllScene.Infra.Data.Context
 				.Configure(p => p.HasMaxLength(100));
 
 			modelBuilder.Configurations.Add(new SeguimentConfig());
+			modelBuilder.Configurations.Add(new GenreConfig());
+			modelBuilder.Configurations.Add(new MemberConfig());
+			modelBuilder.Configurations.Add(new ArtistConfig());
+
 			base.OnModelCreating(modelBuilder);
 		}
 

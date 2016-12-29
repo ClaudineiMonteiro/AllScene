@@ -22,7 +22,7 @@ namespace AllScene.Domain.Entities
 		public virtual Seguiment Seguiment { get; set; }
 		public virtual Genre Genre { get; set; }
 		public virtual ICollection<Member> Members { get; set; }
-		public bool Ativo { get; set; }
+		public bool Active { get; set; }
 		public ValidationResult ValidationResult { get; set; }
 		#endregion
 

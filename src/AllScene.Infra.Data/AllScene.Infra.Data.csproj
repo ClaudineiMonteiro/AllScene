@@ -54,6 +54,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\AllSceneContext.cs" />
+    <Compile Include="EntityConfig\ArtistConfig.cs" />
+    <Compile Include="EntityConfig\GenreConfig.cs" />
+    <Compile Include="EntityConfig\MemberConfig.cs" />
     <Compile Include="EntityConfig\SeguimentConfig.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

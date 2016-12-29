@@ -5,16 +5,26 @@ using AllScene.Domain.Entities;
 
 namespace AllScene.Infra.Data.EntityConfig
 {
-	public class SeguimentConfig : EntityTypeConfiguration<Seguiment>
+	public class MemberConfig : EntityTypeConfiguration<Member>
 	{
-		#region Constructors
-		public SeguimentConfig()
-		{
-			HasKey(c => c.SeguimentId);
+		#region Constructos
 
-			Property(c => c.Description)
+		public MemberConfig()
+		{
+			HasKey(c => c.MemberId);
+
+			Property(c => c.Name)
 				.IsRequired()
 				.HasColumnAnnotation("Index", new IndexAnnotation(new IndexAttribute() { IsUnique = true }));
+
+			Property(c => c.Nickname)
+				.HasMaxLength(50);
+
+			Property(c => c.DateBirth)
+				.IsRequired();
+
+			Property(c => c.Active)
+				.IsRequired();
 
 			Ignore(c => c.ValidationResult);
 		}

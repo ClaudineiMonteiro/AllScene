@@ -5,12 +5,13 @@ using AllScene.Domain.Entities;
 
 namespace AllScene.Infra.Data.EntityConfig
 {
-	public class SeguimentConfig : EntityTypeConfiguration<Seguiment>
+	public class GenreConfig : EntityTypeConfiguration<Genre>
 	{
 		#region Constructors
-		public SeguimentConfig()
+
+		public GenreConfig()
 		{
-			HasKey(c => c.SeguimentId);
+			HasKey(c => c.GenreId);
 
 			Property(c => c.Description)
 				.IsRequired()
