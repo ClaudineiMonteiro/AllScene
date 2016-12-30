@@ -17,8 +17,6 @@ namespace AllScene.Domain.Entities
 
 		public Guid SeguimentId { get; set; }
 		public string Description { get; set; }
-		public Guid ArtistId { get; set; }
-		public virtual Artist Artist { get; set; }
 		public ValidationResult ValidationResult { get; set; }
 		#endregion
 

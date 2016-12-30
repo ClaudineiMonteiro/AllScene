@@ -21,7 +21,11 @@ namespace AllScene.Infra.Data.EntityConfig
 				.HasMaxLength(50);
 
 			Property(c => c.DateBirth)
-				.IsRequired();
+				.IsRequired()
+				.HasColumnType("Date");
+
+			Property(c => c.Gender)
+				.HasMaxLength(1);
 
 			Property(c => c.Active)
 				.IsRequired();

@@ -20,8 +20,8 @@ namespace AllScene.Infra.Data.EntityConfig
 			Property(c => c.Active)
 				.IsRequired();
 
-			HasRequired(e => e.Seguiment)
-				.WithOptional(o => o.Artist);
+			//HasRequired(e => e.Seguiment)
+			//	.WithOptional(o => o.Artist);
 
 			Ignore(c => c.ValidationResult);
 		}
