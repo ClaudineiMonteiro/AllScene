@@ -41,6 +41,8 @@
     <Compile Include="Entities\Genre.cs" />
     <Compile Include="Entities\Member.cs" />
     <Compile Include="Entities\Seguiment.cs" />
+    <Compile Include="Interfaces\Repository\IRepository.cs" />
+    <Compile Include="Interfaces\Repository\ISeguimentRepositorycs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
