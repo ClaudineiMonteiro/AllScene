@@ -23,6 +23,8 @@ namespace AllScene.Domain.Entities
 		public Guid ArtistId { get; set; }
 		public virtual Artist Artist { get; set; }
 		public bool Active { get; set; }
+		public DateTime RegistrationDate { get; set; }
+		public DateTime DateLastModfield { get; set; }
 		public ValidationResult ValidationResult { get; set; }
 		#endregion
 

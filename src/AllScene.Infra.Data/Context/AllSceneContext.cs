@@ -2,6 +2,8 @@
 using System.Data.Entity.ModelConfiguration.Conventions;
 using AllScene.Domain.Entities;
 using AllScene.Infra.Data.EntityConfig;
+using System.Linq;
+using System;
 
 namespace AllScene.Infra.Data.Context
 {
@@ -45,6 +47,25 @@ namespace AllScene.Infra.Data.Context
 			base.OnModelCreating(modelBuilder);
 		}
 
+		public override int SaveChanges()
+		{
+			foreach (var entry in ChangeTracker.Entries().Where(entry => entry.Entity.GetType().GetProperty("RegistrationDate") != null))
+			{
+				if (entry.State == EntityState.Added)
+				{
+					entry.Property("RegistrationDate").CurrentValue = DateTime.Now;
+					entry.Property("DateLastModfield").IsModified = false;
+				}
+
+				if (entry.State == EntityState.Modified)
+				{
+					entry.Property("DateLastModfield").CurrentValue = DateTime.Now;
+					entry.Property("RegistrationDate").IsModified = false;
+				}
+			}
+			return base.SaveChanges();
+
+		}
 		#endregion
 	}
 }

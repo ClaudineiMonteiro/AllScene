@@ -25,6 +25,8 @@ namespace AllScene.Domain.Entities
 		public virtual Genre Genre { get; set; }
 		public virtual ICollection<Member> Members { get; set; }
 		public bool Active { get; set; }
+		public DateTime RegistrationDate { get; set; }
+		public DateTime DateLastModfield { get; set; }
 		public ValidationResult ValidationResult { get; set; }
 		#endregion
 

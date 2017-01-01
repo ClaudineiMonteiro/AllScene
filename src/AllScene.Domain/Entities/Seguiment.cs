@@ -17,6 +17,8 @@ namespace AllScene.Domain.Entities
 
 		public Guid SeguimentId { get; set; }
 		public string Description { get; set; }
+		public DateTime RegistrationDate { get; set; }
+		public DateTime DateLastModfield { get; set; }
 		public ValidationResult ValidationResult { get; set; }
 		#endregion
 

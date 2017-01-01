@@ -15,6 +15,8 @@ namespace AllScene.Domain.Entities
 		#region Properties
 		public Guid GenreId { get; set; }
 		public string Description { get; set; }
+		public DateTime RegistrationDate { get; set; }
+		public DateTime DateLastModfield { get; set; }
 		public ValidationResult ValidationResult { get; set; }
 		#endregion
 
