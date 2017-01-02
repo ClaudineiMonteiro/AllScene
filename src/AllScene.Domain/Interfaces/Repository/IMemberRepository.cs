@@ -4,7 +4,7 @@ namespace AllScene.Domain.Interfaces.Repository
 {
 	public interface IMemberRepository : IRepository<Member>
 	{
-		Member GetByDescription(string description);
+		Member GetByName(string name);
 		Member GetByNickname(string nickname);
 	}
 }

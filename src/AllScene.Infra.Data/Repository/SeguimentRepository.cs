@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Linq;
 using AllScene.Domain.Entities;
 using AllScene.Domain.Interfaces.Repository;
@@ -8,10 +9,12 @@ using Dapper;
 
 namespace AllScene.Infra.Data.Repository
 {
-	public class SeguimentRepository : Repository<Seguiment>, ISeguimentRepositorycs
+	public class SeguimentRepository : Repository<Seguiment>, ISeguimentRepository
 	{
+		private readonly DbConnection _cn;
 		public SeguimentRepository(AllSceneContext context) : base(context)
 		{
+			_cn = Db.Database.Connection;
 		}
 
 		public Seguiment GetByDescription(string description)
@@ -21,23 +24,21 @@ namespace AllScene.Infra.Data.Repository
 
 		public override IEnumerable<Seguiment> GetAll()
 		{
-			var cn = Db.Database.Connection;
 			var sql = @"
 SELECT *
   FROM Sequiment
 ";
-			return cn.Query<Seguiment>(sql);
+			return _cn.Query<Seguiment>(sql);
 		}
 
 		public override Seguiment GetById(Guid id)
 		{
-			var cn = Db.Database.Connection;
 			var sql = @"
 SELECT A.*
   FROM Seguiment A
  WHERE A.SeguimentId = @SeguimentId
 ";
-			var seguiment = cn.Query<Seguiment>(sql, new {SeguimentId = id});
+			var seguiment = _cn.Query<Seguiment>(sql, new {SeguimentId = id});
 			return seguiment.FirstOrDefault();
 		}
 	}

@@ -11,10 +11,10 @@ namespace AllScene.Infra.Data.Repository
 {
 	public class GenreRepository : Repository<Genre>, IGenreRepository
 	{
-		private DbConnection cn;
+		private readonly DbConnection _cn;
 		public GenreRepository(AllSceneContext context) : base(context)
 		{
-			cn = Db.Database.Connection;
+			_cn = Db.Database.Connection;
 		}
 
 		public Genre GetByDescription(string description)
@@ -28,7 +28,7 @@ namespace AllScene.Infra.Data.Repository
 SELECT *
   FROM Genre
 ";
-			return cn.Query<Genre>(sql);
+			return _cn.Query<Genre>(sql);
 		}
 
 		public override Genre GetById(Guid id)
@@ -38,7 +38,7 @@ SELECT A.*
   FROM Genre A
  WHERE A.GenreId = @GenreId
 ";
-			var genre = cn.Query<Genre>(sql, new {GenreId = id}).FirstOrDefault();
+			var genre = _cn.Query<Genre>(sql, new {GenreId = id}).FirstOrDefault();
 			return genre;
 		}
 	}

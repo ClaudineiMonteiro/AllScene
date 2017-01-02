@@ -2,7 +2,7 @@
 
 namespace AllScene.Domain.Interfaces.Repository
 {
-	public interface ISeguimentRepositorycs : IRepository<Seguiment>
+	public interface ISeguimentRepository : IRepository<Seguiment>
 	{
 		Seguiment GetByDescription(string description);
 	}

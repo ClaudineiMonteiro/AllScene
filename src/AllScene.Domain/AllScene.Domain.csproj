@@ -45,7 +45,7 @@
     <Compile Include="Interfaces\Repository\IGenreRepository.cs" />
     <Compile Include="Interfaces\Repository\IMemberRepository.cs" />
     <Compile Include="Interfaces\Repository\IRepository.cs" />
-    <Compile Include="Interfaces\Repository\ISeguimentRepositorycs.cs" />
+    <Compile Include="Interfaces\Repository\ISeguimentRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
