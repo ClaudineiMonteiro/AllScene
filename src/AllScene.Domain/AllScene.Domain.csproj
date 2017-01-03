@@ -47,9 +47,11 @@
     <Compile Include="Interfaces\Repository\IRepository.cs" />
     <Compile Include="Interfaces\Repository\ISeguimentRepository.cs" />
     <Compile Include="Interfaces\Service\IGenreService.cs" />
+    <Compile Include="Interfaces\Service\IMemberService.cs" />
     <Compile Include="Interfaces\Service\ISeguimentService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\GenreService.cs" />
+    <Compile Include="Services\MemberService.cs" />
     <Compile Include="Services\SeguimentService.cs" />
   </ItemGroup>
   <ItemGroup>
