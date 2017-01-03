@@ -10,7 +10,7 @@ namespace AllScene.Domain.Interfaces.Repository
 		TEntity GetById(Guid id);
 		IEnumerable<TEntity> GetAll();
 		TEntity Update(TEntity obj);
-		void Remover(Guid id);
+		void Remove(Guid id);
 		IEnumerable<TEntity> Search(Expression<Func<TEntity, bool>> predicate);
 		int SaveChange();
 	}

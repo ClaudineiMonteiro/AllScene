@@ -48,7 +48,7 @@ namespace AllScene.Infra.Data.Repository
 			return obj;
 		}
 
-		public virtual void Remover(Guid id)
+		public virtual void Remove(Guid id)
 		{
 			DbSet.Remove(DbSet.Find(id));
 		}
