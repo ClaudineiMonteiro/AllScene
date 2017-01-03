@@ -20,6 +20,7 @@ namespace AllScene.Domain.Services
 		}
 		#endregion
 
+		#region Methods
 		public void Dispose()
 		{
 			_seguimentRepository.Dispose();
@@ -66,5 +67,6 @@ namespace AllScene.Domain.Services
 		{
 			_seguimentRepository.Remove(id);
 		}
+		#endregion
 	}
 }

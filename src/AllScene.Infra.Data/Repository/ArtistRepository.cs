@@ -58,7 +58,6 @@ SELECT *
 
 			return artist.FirstOrDefault();
 		}
-
 		#endregion
 	}
 }
