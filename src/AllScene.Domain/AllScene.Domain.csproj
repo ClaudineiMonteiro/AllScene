@@ -57,6 +57,7 @@
     <Compile Include="Specifications\Genres\GenreUpMustHaveUniqueDescriptionSpecification.cs" />
     <Compile Include="Specifications\Seguiments\SeguimentMustHaveCompletedDescriptionValidoSpecification.cs" />
     <Compile Include="Specifications\Seguiments\SeguimentUpMustHaveUniqueDescriptionSpecification.cs" />
+    <Compile Include="Validations\Genres\GenreIsConsistentValidation.cs" />
     <Compile Include="Validations\Genres\GenreSuitableForRegistrationValidation.cs" />
     <Compile Include="Validations\Seguiments\SeguimentIsConsistentValidation.cs" />
     <Compile Include="Validations\Seguiments\SeguimentSuitableForRegistrationValidation.cs" />
