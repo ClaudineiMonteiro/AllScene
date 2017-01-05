@@ -2,7 +2,7 @@
 using AllScene.Domain.Specifications.Seguiments;
 using DomainValidation.Validation;
 
-namespace AllScene.Domain.Validations.SeguimentValidations
+namespace AllScene.Domain.Validations.Seguiments
 {
 	public class SeguimentIsConsistentValidation : Validator<Seguiment>
 	{

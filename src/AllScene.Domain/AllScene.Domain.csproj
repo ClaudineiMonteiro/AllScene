@@ -53,10 +53,13 @@
     <Compile Include="Services\GenreService.cs" />
     <Compile Include="Services\MemberService.cs" />
     <Compile Include="Services\SeguimentService.cs" />
+    <Compile Include="Specifications\Genres\GenreMustHaveCompletedDescriptionValidoSpecification.cs" />
+    <Compile Include="Specifications\Genres\GenreUpMustHaveUniqueDescriptionSpecification.cs" />
     <Compile Include="Specifications\Seguiments\SeguimentMustHaveCompletedDescriptionValidoSpecification.cs" />
     <Compile Include="Specifications\Seguiments\SeguimentUpMustHaveUniqueDescriptionSpecification.cs" />
-    <Compile Include="Validations\SeguimentValidations\SeguimentIsConsistentValidation.cs" />
-    <Compile Include="Validations\SeguimentValidations\SeguimentSuitableForRegistrationValidation.cs" />
+    <Compile Include="Validations\Genres\GenreSuitableForRegistrationValidation.cs" />
+    <Compile Include="Validations\Seguiments\SeguimentIsConsistentValidation.cs" />
+    <Compile Include="Validations\Seguiments\SeguimentSuitableForRegistrationValidation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
