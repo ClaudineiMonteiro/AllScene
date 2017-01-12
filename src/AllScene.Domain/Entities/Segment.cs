@@ -28,7 +28,7 @@ namespace AllScene.Domain.Entities
 		public bool IsValid()
 		{
 			ValidationResult = new SegmentIsConsistentValidation().Validate(this);
-			return true;
+			return ValidationResult.IsValid;
 		}
 		#endregion
 	}
