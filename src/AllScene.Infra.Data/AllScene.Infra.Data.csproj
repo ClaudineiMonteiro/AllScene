@@ -61,7 +61,7 @@
     <Compile Include="EntityConfig\ArtistConfig.cs" />
     <Compile Include="EntityConfig\GenreConfig.cs" />
     <Compile Include="EntityConfig\MemberConfig.cs" />
-    <Compile Include="EntityConfig\SeguimentConfig.cs" />
+    <Compile Include="EntityConfig\SegmentConfig.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -69,7 +69,7 @@
     <Compile Include="Repository\GenreRepository.cs" />
     <Compile Include="Repository\MemberRepository.cs" />
     <Compile Include="Repository\Repository.cs" />
-    <Compile Include="Repository\SeguimentRepository.cs" />
+    <Compile Include="Repository\SegmentRepository.cs" />
     <Compile Include="UoW\UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>

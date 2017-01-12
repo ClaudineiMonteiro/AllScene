@@ -40,27 +40,27 @@
     <Compile Include="Entities\Artist.cs" />
     <Compile Include="Entities\Genre.cs" />
     <Compile Include="Entities\Member.cs" />
-    <Compile Include="Entities\Seguiment.cs" />
+    <Compile Include="Entities\Segment.cs" />
     <Compile Include="Interfaces\Repository\IArtistRepository.cs" />
     <Compile Include="Interfaces\Repository\IGenreRepository.cs" />
     <Compile Include="Interfaces\Repository\IMemberRepository.cs" />
     <Compile Include="Interfaces\Repository\IRepository.cs" />
-    <Compile Include="Interfaces\Repository\ISeguimentRepository.cs" />
+    <Compile Include="Interfaces\Repository\ISegmentRepository.cs" />
     <Compile Include="Interfaces\Service\IGenreService.cs" />
     <Compile Include="Interfaces\Service\IMemberService.cs" />
-    <Compile Include="Interfaces\Service\ISeguimentService.cs" />
+    <Compile Include="Interfaces\Service\ISegmentService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\GenreService.cs" />
     <Compile Include="Services\MemberService.cs" />
-    <Compile Include="Services\SeguimentService.cs" />
+    <Compile Include="Services\SegmentService.cs" />
     <Compile Include="Specifications\Genres\GenreMustHaveCompletedDescriptionValidoSpecification.cs" />
     <Compile Include="Specifications\Genres\GenreUpMustHaveUniqueDescriptionSpecification.cs" />
-    <Compile Include="Specifications\Seguiments\SeguimentMustHaveCompletedDescriptionValidoSpecification.cs" />
-    <Compile Include="Specifications\Seguiments\SeguimentUpMustHaveUniqueDescriptionSpecification.cs" />
+    <Compile Include="Specifications\Segments\SegmentMustHaveCompletedDescriptionValidoSpecification.cs" />
+    <Compile Include="Specifications\Segments\SegmentUpMustHaveUniqueDescriptionSpecification.cs" />
     <Compile Include="Validations\Genres\GenreIsConsistentValidation.cs" />
     <Compile Include="Validations\Genres\GenreSuitableForRegistrationValidation.cs" />
-    <Compile Include="Validations\Seguiments\SeguimentIsConsistentValidation.cs" />
-    <Compile Include="Validations\Seguiments\SeguimentSuitableForRegistrationValidation.cs" />
+    <Compile Include="Validations\Segments\SegmentIsConsistentValidation.cs" />
+    <Compile Include="Validations\Segments\SegmentSuitableForRegistrationValidation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

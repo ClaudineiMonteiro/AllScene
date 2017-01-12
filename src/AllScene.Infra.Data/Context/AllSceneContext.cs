@@ -14,7 +14,7 @@ namespace AllScene.Infra.Data.Context
 		#endregion
 
 		#region Properties
-		public DbSet<Seguiment> Seguiments { get; set; }
+		public DbSet<Segment> Seguiments { get; set; }
 		public DbSet<Member> Members { get; set; }
 		public DbSet<Genre> Genres { get; set; }
 		public DbSet<Artist> Artists { get; set; }
@@ -39,7 +39,7 @@ namespace AllScene.Infra.Data.Context
 			modelBuilder.Properties<string>()
 				.Configure(p => p.HasMaxLength(100));
 
-			modelBuilder.Configurations.Add(new SeguimentConfig());
+			modelBuilder.Configurations.Add(new SegmentConfig());
 			modelBuilder.Configurations.Add(new GenreConfig());
 			modelBuilder.Configurations.Add(new MemberConfig());
 			modelBuilder.Configurations.Add(new ArtistConfig());

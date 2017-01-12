@@ -6,15 +6,15 @@ using AllScene.Domain.Interfaces.Repository;
 
 namespace AllScene.Domain.Services
 {
-	public class SeguimentService : ISeguimentService
+	public class SegmentService : ISegmentService
 	{
 		#region Attribuites
-		private readonly ISeguimentRepository _seguimentRepository;
+		private readonly ISegmentRepository _seguimentRepository;
 		#endregion
 
 		#region Constructors
 
-		public SeguimentService(ISeguimentRepository seguimentRepository)
+		public SegmentService(ISegmentRepository seguimentRepository)
 		{
 			_seguimentRepository = seguimentRepository;
 		}
@@ -27,7 +27,7 @@ namespace AllScene.Domain.Services
 			GC.SuppressFinalize(this);
 		}
 
-		public Seguiment Add(Seguiment seguiment)
+		public Segment Add(Segment seguiment)
 		{
 			if (!seguiment.IsValid())
 			{
@@ -43,22 +43,22 @@ namespace AllScene.Domain.Services
 			return _seguimentRepository.Add(seguiment);
 		}
 
-		public Seguiment GetById(Guid id)
+		public Segment GetById(Guid id)
 		{
 			return _seguimentRepository.GetById(id);
 		}
 
-		public Seguiment GetByDescription(string description)
+		public Segment GetByDescription(string description)
 		{
 			return _seguimentRepository.GetByDescription(description);
 		}
 
-		public IEnumerable<Seguiment> GetAll()
+		public IEnumerable<Segment> GetAll()
 		{
 			return _seguimentRepository.GetAll();
 		}
 
-		public Seguiment Update(Seguiment seguiment)
+		public Segment Update(Segment seguiment)
 		{
 			return _seguimentRepository.Update(seguiment);
 		}
