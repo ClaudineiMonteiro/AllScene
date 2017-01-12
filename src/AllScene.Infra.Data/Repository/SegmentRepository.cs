@@ -25,8 +25,8 @@ namespace AllScene.Infra.Data.Repository
 		public override IEnumerable<Segment> GetAll()
 		{
 			var sql = @"
-SELECT *
-  FROM Seqment
+SELECT A.*
+  FROM Seqment A
 ";
 			return _cn.Query<Segment>(sql);
 		}
@@ -38,8 +38,11 @@ SELECT A.*
   FROM Segment A
  WHERE A.SegmentId = @SegmentId
 ";
-			var segment = _cn.Query<Segment>(sql, new {SegmentId = id});
-			return segment.FirstOrDefault();
+			using (var mult = _cn.QueryMultiple(sql, new { SegmentId = id}))
+			{
+				var seguiment = mult.Read<Segment>().Single();
+				return seguiment;
+			}
 		}
 	}
 }

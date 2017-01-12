@@ -42,21 +42,22 @@ SELECT *
 			var sql = @"
 SELECT *
   FROM Artist A
-       LEFT JOIN Member B
-         ON B.ArtistId = A.ArtistId
  WHERE A.ArtistId = @ArtistId
-";
-			var artist = new List<Artist>();
-			_cn.Query<Artist, Member, Artist>(sql,
-				(a, b) =>
-				{
-					artist.Add(a);
-					if (b != null)
-						artist[0].Members.Add(b);
-					return artist.FirstOrDefault();
-				}, new { ArtistId = id}, splitOn: "ArtistId, MemberId");
 
-			return artist.FirstOrDefault();
+SELECT * 
+  FROM Member B
+ B.ArtistId = @ArtistId
+";
+			using (var mult = _cn.QueryMultiple(sql, new { ArtistId = id}))
+			{
+				var artist = mult.Read<Artist>().Single();
+				var members = mult.Read<Member>().ToList();
+				foreach (var member in members)
+				{
+					artist.Members.Add(member);
+				}
+				return artist;
+			}
 		}
 		#endregion
 	}
