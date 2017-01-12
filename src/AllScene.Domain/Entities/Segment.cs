@@ -1,4 +1,5 @@
 ﻿using System;
+using AllScene.Domain.Validations.Segments;
 using DomainValidation.Validation;
 
 namespace AllScene.Domain.Entities
@@ -18,7 +19,7 @@ namespace AllScene.Domain.Entities
 		public Guid SegmentId { get; set; }
 		public string Description { get; set; }
 		public DateTime RegistrationDate { get; set; }
-		public DateTime DateLastModfield { get; set; }
+		public DateTime DateLastModified { get; set; }
 		public ValidationResult ValidationResult { get; set; }
 		#endregion
 
@@ -26,7 +27,7 @@ namespace AllScene.Domain.Entities
 
 		public bool IsValid()
 		{
-			//Include business rules
+			ValidationResult = new SegmentIsConsistentValidation().Validate(this);
 			return true;
 		}
 		#endregion
