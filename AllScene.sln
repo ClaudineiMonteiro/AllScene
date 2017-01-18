@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllScene.Infra.Data", "src\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllScene.Services.REST.ClienteAPI", "src\AllScene.Services.REST.ClienteAPI\AllScene.Services.REST.ClienteAPI.csproj", "{25C897B2-A649-4058-B793-5E73544CCB7C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllScene.Application", "src\AllScene.Application\AllScene.Application.csproj", "{3C85347F-BA7C-471B-98B4-F7BCB1F5724F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{25C897B2-A649-4058-B793-5E73544CCB7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25C897B2-A649-4058-B793-5E73544CCB7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25C897B2-A649-4058-B793-5E73544CCB7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C85347F-BA7C-471B-98B4-F7BCB1F5724F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C85347F-BA7C-471B-98B4-F7BCB1F5724F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C85347F-BA7C-471B-98B4-F7BCB1F5724F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C85347F-BA7C-471B-98B4-F7BCB1F5724F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,5 +64,6 @@ Global
 		{D74DB277-4B89-426D-8BFC-A997571CF126} = {3AC529DE-C564-4BBA-85EE-64CC5BD116FE}
 		{16DECCA2-9D59-4E9D-BC1F-D87678808916} = {8FEFEED9-30C5-4399-BDDF-E050C7456746}
 		{25C897B2-A649-4058-B793-5E73544CCB7C} = {9730E29F-B392-46D0-BAEE-C82DE3146643}
+		{3C85347F-BA7C-471B-98B4-F7BCB1F5724F} = {894F8B15-A05D-464F-ABA9-9D228EE64F5F}
 	EndGlobalSection
 EndGlobal
